@@ -1,0 +1,58 @@
+.container {
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#logo_img {
+    padding-bottom: 15px;
+}
+
+.back_box {
+    width: 300px;
+    height: 300px;
+}
+
+#msg_box {
+    width: 300px;
+    height: 300px;
+}
+
+#loading_img {
+    display: none;
+    margin: auto;
+    margin-top: -80px;
+    margin-bottom: -50px;
+}
+
+#complete_img {
+    display: none;
+    margin: auto;
+}
+
+#msg_panel {
+    display: none;
+}
+
+#stop_btn {
+    display: none;
+    margin: auto;
+    width: 250px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#send_btn {
+    display: block;
+    margin: auto;
+    width: 250px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
