@@ -5,7 +5,7 @@ chrome.runtime.onMessage.addListener(function(msg) {
     if(msg.cmd == "start") {
         selectContact();
     }
-    
+
 });*/
 
 var invites = 0;
@@ -15,22 +15,24 @@ var counter = 0;
 var offset = 0;
 
 $("._42ft._4jy0._4jy3._517h._51sy").each(function(index) {
-    if($(this).attr('ajaxify') && $(this).text() == "Invite") {
+    if($(this).attr('ajaxify') && $(this).text().trim() == "Invite") {
         invites++;
         var $that = $(this);
         setTimeout(function() {
-            $that.hide();
-        }, 5000 + offset);
-        offset += 5000;
+            $that.click();
+        }, 1000 + offset);
+        offset += 1000;
     }
 
-    if($(this).text() == "Liked") {
+    if($(this).text().trim() == "Liked") {
         likeCount++;
     }
 
-    if($(this).text() == "Invited") {
+    if($(this).text().trim() == "Invited") {
         invitedCount++;
     }
 });
+
+console.log(`invites:${invites}, invitedCount:${invitedCount}, likeCount:${likeCount}`);
 
 /*alert("Invites found: " + invites + " Likes: " + likeCount + " Invited: " + invitedCount);*/
