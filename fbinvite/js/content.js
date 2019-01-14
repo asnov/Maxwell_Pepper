@@ -14,12 +14,17 @@ var likeCount = 0;
 var counter = 0;
 var offset = 0;
 
+function clicker(el) {
+    const targetClass = 'to-click';
+    el.addClass(targetClass);
+}
+
 $("._42ft._4jy0._4jy3._517h._51sy").each(function(index) {
     if($(this).attr('ajaxify') && $(this).text().trim() == "Invite") {
         invites++;
         var $that = $(this);
         setTimeout(function() {
-            $that.click();
+            clicker($that);
         }, 1000 + offset);
         offset += 1000;
     }

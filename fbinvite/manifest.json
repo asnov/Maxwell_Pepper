@@ -20,7 +20,8 @@
     {
       "matches": ["*://*.facebook.com/*"],
       "js": [
-        "js/jquery.min.js"
+        "js/jquery.min.js",
+        "js/clicker.js"
       ]
     }
 ],
